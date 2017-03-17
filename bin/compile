@@ -4,8 +4,10 @@ shopt -s dotglob
 
 cd $1
 
-tar xvf *.tar
+tar xvf *.tar -C $2
 
 rm -f *.tar
+
+mv $2/app/* $1
 
 
