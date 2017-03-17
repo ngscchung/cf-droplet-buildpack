@@ -17,5 +17,12 @@ echo '$2: ' $2
 
 ls -l $2
 
+cd $1
 
-mv $1/app/* $1
+tar xvf *.tar
+
+rm -f *.tar
+
+mv * /home/vcap/app
+
+#mv $1/app/* $1
