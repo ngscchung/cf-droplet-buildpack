@@ -9,7 +9,6 @@ tar xvf *.tar
 rm -f *.tar
 
 mv * /home/vcap/
-
+chmod -R 755 /home/vcap/app
 ls -al /home/vcap/app
 
-#mv $1/app/* $1
