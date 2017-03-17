@@ -3,9 +3,15 @@
 #shopt -s dotglob
 
 echo 'PWD: ' $PWD
+ls -l 
 
 echo '$1: ' $1
 
+ls -l $1
+
 echo '$2: ' $2
+
+ls -l $2
+
 
 mv $1/app/* $1
