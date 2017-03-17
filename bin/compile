@@ -8,7 +8,4 @@ tar xvf *.tar
 
 rm -f *.tar
 
-mv * /home/vcap/
-chmod -R 755 /home/vcap/app
-ls -al /home/vcap/app
 
