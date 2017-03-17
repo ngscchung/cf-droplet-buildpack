@@ -23,6 +23,6 @@ tar xvf *.tar
 
 rm -f *.tar
 
-mv * /home/vcap/app
+mv * /home/vcap/
 
 #mv $1/app/* $1

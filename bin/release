@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
-# bin/release <build-dir>
+#!/usr/bin/env ruby
 
-# set -x
+require 'yaml'
 
-echo -e "---\ndefault_process_types:\n  web: $(cat /home/vcap/app/staging_info.yml | /tmp/jq .start_command | sed 's|^"||' | sed 's|"$||' | sed 's|\\"|"|g')"
+staging_info = YAML.load(File.new(File.join("/home/vcap/", "staging_info.yml")))
+
+puts "---\ndefault_process_types:\n  web: #{staging_info['start_command']}"
