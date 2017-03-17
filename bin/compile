@@ -5,6 +5,10 @@
 echo 'PWD: ' $PWD
 ls -l 
 
+echo '/home/vcap/app'
+
+ls -l /home/vcap/app
+
 echo '$1: ' $1
 
 ls -l $1
