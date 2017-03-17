@@ -10,6 +10,6 @@ rm -f *.tar
 
 mv * /home/vcap/
 
-ls -al /home/vcap
+ls -al /home/vcap/app
 
 #mv $1/app/* $1
