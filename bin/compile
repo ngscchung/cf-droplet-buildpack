@@ -1,2 +1,11 @@
 #!/bin/bash
-shopt -s dotglob && mv $1/app/* $1
+
+#shopt -s dotglob
+
+echo 'PWD: ' $PWD
+
+echo '$1: ' $1
+
+echo '$2: ' $2
+
+mv $1/app/* $1
